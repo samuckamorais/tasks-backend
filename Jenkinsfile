@@ -42,7 +42,7 @@ pipeline {
                 }
              }
         }
-        stage ('Deploy Backend') {
+        stage ('Deploy Frontend') {
              steps {
                 dir('frontend') {
                     git credentialsId: 'github_login', url: 'https://github.com/samuckamorais/tasks-frontend'
